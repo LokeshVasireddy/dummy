@@ -1,0 +1,250 @@
+INTERVIEW VIDEO CODING PLATFORM (LIKE LEETCODE INTERVIEW) — RESUME WORTHY FEATURES
+
+--------------------------------------------------
+REAL-TIME VIDEO INTERVIEW
+--------------------------------------------------
+
+- Peer-to-peer video calling using WebRTC
+- Audio/video toggle (mute/unmute, camera on/off)
+- Screen sharing support
+- Dynamic participant join/leave handling
+
+--------------------------------------------------
+REAL-TIME COLLABORATIVE CODE EDITOR
+--------------------------------------------------
+
+- Shared code editor for interviewer and candidate
+- Real-time code synchronization using WebSockets
+- Cursor position syncing
+- Multi-user editing support
+- Language selection (JavaScript, Python, Java, etc.)
+
+--------------------------------------------------
+CODE EXECUTION SYSTEM
+--------------------------------------------------
+
+- Run code inside browser/editor
+- Backend API for code execution
+- Display output and error messages
+- Support multiple programming languages (optional)
+
+--------------------------------------------------
+SIGNALING SERVER (REAL-TIME BACKEND)
+--------------------------------------------------
+
+- Socket.IO or WebSocket signaling server
+- SDP and ICE candidate exchange for WebRTC
+- Room-based communication system
+- Real-time event handling
+
+--------------------------------------------------
+INTERVIEW ROOM MANAGEMENT
+--------------------------------------------------
+
+- Create interview session
+- Unique room links
+- Secure room join validation
+- Waiting room before start
+- Start/end interview controls
+
+--------------------------------------------------
+AUTHENTICATION & ACCESS CONTROL
+--------------------------------------------------
+
+- JWT authentication
+- Role-based access:
+    - Interviewer
+    - Candidate
+- Protected routes
+- Secure room entry
+
+--------------------------------------------------
+LIVE COLLABORATION FEATURES
+--------------------------------------------------
+
+- Real-time chat panel
+- Typing indicators (optional)
+- Interview timer
+- Notes panel for interviewer (optional)
+
+--------------------------------------------------
+NETWORK & CONNECTION HANDLING
+--------------------------------------------------
+
+- STUN/TURN server integration
+- Connection state monitoring
+- Auto-reconnect handling
+
+--------------------------------------------------
+BACKEND ARCHITECTURE
+--------------------------------------------------
+
+- REST API for session management
+- Modular backend structure
+- Middleware for authentication
+- Error handling
+
+--------------------------------------------------
+PERFORMANCE & SCALABILITY (OPTIONAL HIGH-VALUE)
+--------------------------------------------------
+
+- Redis for socket session storage
+- Rate limiting for room creation
+- Efficient state synchronization
+
+--------------------------------------------------
+UI/UX FEATURES
+--------------------------------------------------
+
+- Responsive layout
+- Video + editor split screen layout
+- Participant indicators
+- Connection status display
+
+--------------------------------------------------
+BONUS (VERY IMPRESSIVE)
+--------------------------------------------------
+
+- Code history or version tracking
+- Syntax highlighting
+- Interview recording
+- Raise hand or reaction system
+
+
+
+
+
+ADVANCED FEATURES — LEETCODE STYLE INTERVIEW PLATFORM
+
+--------------------------------------------------
+1. OPERATIONAL TRANSFORM / REAL-TIME EDIT SYNC
+--------------------------------------------------
+
+- Conflict-free real-time collaborative editing
+- Handle simultaneous typing from multiple users
+- Prevent overwrite conflicts
+- Maintain consistent editor state across clients
+
+(Use OT or CRDT concepts)
+
+WHY THIS IS STRONG:
+Shows real-time distributed system understanding.
+
+--------------------------------------------------
+2. RECONNECT & SESSION RECOVERY
+--------------------------------------------------
+
+- If internet disconnects:
+    - Automatically reconnect user
+    - Restore video call
+    - Restore editor state
+    - Rejoin same interview room
+
+WHY THIS IS STRONG:
+Real production apps must handle unstable networks.
+
+--------------------------------------------------
+3. EVENT-DRIVEN SOCKET ARCHITECTURE
+--------------------------------------------------
+
+Design structured socket events:
+
+- user-joined
+- user-left
+- code-change
+- cursor-move
+- start-interview
+- end-interview
+
+Use modular event handlers instead of messy socket code.
+
+WHY THIS IS STRONG:
+Shows scalable backend design.
+
+--------------------------------------------------
+4. CODE SNAPSHOT / VERSION HISTORY
+--------------------------------------------------
+
+- Save editor state periodically
+- Allow interviewer to view previous versions
+- Restore earlier code snapshot
+
+WHY THIS IS STRONG:
+Demonstrates state management and real collaboration logic.
+
+--------------------------------------------------
+5. INTERVIEW ROLE PERMISSIONS
+--------------------------------------------------
+
+Different capabilities:
+
+Interviewer:
+- Start session
+- End session
+- View notes
+- Control screen share
+
+Candidate:
+- Edit code
+- Share screen (optional)
+
+WHY THIS IS STRONG:
+Shows authorization design beyond basic login.
+
+--------------------------------------------------
+6. MEDIA TRACK CONTROL (ADVANCED WEBRTC)
+--------------------------------------------------
+
+- Dynamically replace video tracks
+- Switch between camera and screen share without reconnecting
+- Manage media streams properly
+
+WHY THIS IS STRONG:
+Shows deep WebRTC knowledge.
+
+--------------------------------------------------
+7. REAL-TIME PRESENCE SYSTEM
+--------------------------------------------------
+
+- Show active participants
+- Typing indicators
+- Online/offline status
+
+WHY THIS IS STRONG:
+Real-time state synchronization.
+
+--------------------------------------------------
+8. INTERVIEW TIMER WITH SERVER SYNC
+--------------------------------------------------
+
+- Timer controlled by server
+- Prevent client manipulation
+- Sync across all users
+
+WHY THIS IS STRONG:
+Shows authoritative backend design.
+
+--------------------------------------------------
+9. RATE LIMITING & SECURITY
+--------------------------------------------------
+
+- Limit room creation frequency
+- Prevent socket spam
+- Validate socket events
+
+WHY THIS IS STRONG:
+Production-level thinking.
+
+--------------------------------------------------
+10. CLEAN SYSTEM ARCHITECTURE
+--------------------------------------------------
+
+Separate layers:
+
+- WebRTC media layer
+- Socket signaling layer
+- Collaboration state layer
+- REST API layer
+
+WHY THIS IS STRONG:
+Senior-level project structure.
